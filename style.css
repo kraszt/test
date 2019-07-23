@@ -1,0 +1,132 @@
+.editablecombo-button
+{
+	cursor: pointer;
+}
+
+.editablecombo-dropdown
+{
+	max-height: 300px;
+	border: 1px solid #ddd;
+}
+
+.editablecombo
+{
+	width: 20%;
+	margin: 30px 0px;
+}
+
+.editablecombo-item
+{
+	background-color: white;
+}
+
+
+.editablecombo-item-selected
+{
+	background-color: lightgray;
+}
+
+
+
+table, td, th
+{
+	font-size: 11px;
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+	padding: 10px;
+}
+
+th
+{
+	font-size: 11px;
+	font-weight: bold;
+	cursor: pointer;
+	border: 1px solid #ddd;
+	padding-left: 10px;
+	background-color: #d0d0d0;
+}
+
+tr:hover
+{
+}
+
+tr:nth-child(even)
+{
+	background-color: #f1f1f1;
+}
+
+.table-arrow
+{
+	padding-left: 10px;
+}
+
+
+.tab
+{
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	overflow: hidden;
+}
+
+.tab-panel
+{
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.tab-header
+{
+	border: 1px solid #ccc;
+	padding: 6px 12px;
+	font-size: 17px;
+}
+
+.tab div:hover
+{
+	background-color: #ddd;
+}
+
+div#selected.tab-header
+{
+	background-color: #ccc;
+}
+
+
+
+.accordion
+{
+    background-color: BurlyWood;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.accordion-arrow
+{
+    float: right;
+    padding-right: 10px;
+}
+
+.accordion-arrow:after
+{
+    content: '+';
+}
+
+#opena.accordion-arrow:after
+{
+    content: '-';
+}
+
+.accordion-panel
+{
+    border-bottom: 1px solid #ddd;  
+    background-color: Cornsilk;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .50s;
+    padding: 0 0 0 1em;
+}
+
+#open.accordion-panel
+{
+    max-height: 10em;    
+}
