@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>main</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="chartjs/Chart.bundle.js"></script>
+		<script defer src="main.js"></script>
+	</head>
+	<body>
+		<script>
+			function createChart(ctx)
+			{
+				chart = new Chart(ctx, {type: 'line', data:{labels: [], datasets:[{label: "portfolio value", fill: false, data:[]}]}, options: {
+					scales: {
+					xAxes: [{}]}
+				}});
+				return chart;
+			}
+
+			function addDataChart(chart, val)
+			{
+				chart.data.datasets[0].data.push(val);
+				chart.update();
+			}
+
+			function updateChart(chart)
+			{
+				chart.update();
+			}
+		</script>
+	</body>
+</html>

@@ -1,48 +1,40 @@
-.editablecombo-button
+1thead, 1tbody
 {
-	cursor: pointer;
+	display: block;
 }
 
-.editablecombo-dropdown
+tbody
 {
-	max-height: 300px;
-	border: 1px solid #ddd;
+	height: 250px;
+	overflow-y: auto;
+	overflow-x: auto;
 }
 
-.editablecombo
+1th
 {
-	width: 20%;
-	margin: 30px 0px;
+	width: 160px;
 }
 
-.editablecombo-item
+1td
 {
-	background-color: white;
+	width: 150px;
 }
-
-
-.editablecombo-item-selected
-{
-	background-color: lightgray;
-}
-
-
 
 table, td, th
 {
-	font-size: 11px;
+	font-size: 14px;
 	border: 1px solid #ddd;
 	border-collapse: collapse;
-	padding: 10px;
+	1padding-top: 10px;
+	1padding-bottom: 10px;
 }
 
 th
 {
-	font-size: 11px;
+	font-size: 14px;
 	font-weight: bold;
 	cursor: pointer;
 	border: 1px solid #ddd;
-	padding-left: 10px;
 	background-color: #d0d0d0;
 }
 
@@ -59,6 +51,49 @@ tr:nth-child(even)
 {
 	padding-left: 10px;
 }
+
+
+
+
+.accordion
+{
+	background-color: #d0d0d0;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.accordion-arrow
+{
+	float: right;
+	padding-right: 10px;
+}
+
+.accordion-arrow:after
+{
+	content: '+';
+}
+
+#opena.accordion-arrow:after
+{
+	content: '-';
+}
+
+.accordion-panel
+{	
+	border-bottom: 1px solid #ddd;  
+	background-color: #f1f1f1;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height .50s;
+	padding: 0 0 0 1em;
+}
+
+#open.accordion-panel
+{
+	max-height: 10em;    
+}
+
+
 
 
 .tab
@@ -78,7 +113,8 @@ tr:nth-child(even)
 {
 	border: 1px solid #ccc;
 	padding: 6px 12px;
-	font-size: 17px;
+	font-size: 14px;
+	font-weight: bold;
 }
 
 .tab div:hover
@@ -92,41 +128,10 @@ div#selected.tab-header
 }
 
 
-
-.accordion
+button:after
 {
-    background-color: BurlyWood;
-    font-size: 17px;
-    font-weight: bold;
-}
-
-.accordion-arrow
-{
-    float: right;
-    padding-right: 10px;
-}
-
-.accordion-arrow:after
-{
-    content: '+';
-}
-
-#opena.accordion-arrow:after
-{
-    content: '-';
-}
-
-.accordion-panel
-{
-    border-bottom: 1px solid #ddd;  
-    background-color: Cornsilk;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .50s;
-    padding: 0 0 0 1em;
-}
-
-#open.accordion-panel
-{
-    max-height: 10em;    
+	font-family: "Font Awesome 5 Free"; 
+	1font-weight: 100;
+	content: "\f5b8";
+	
 }
